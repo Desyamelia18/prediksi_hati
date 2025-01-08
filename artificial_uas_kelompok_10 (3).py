@@ -10,7 +10,7 @@ Original file is located at
 """
 import pandas as pd
 
-df = pd.read_csv("https://raw.githubusercontent.com/Arinatyas/bismillah/refs/heads/main/indian_liver_patient.csv", encoding="utf-8")
+df = pd.read_csv("https://raw.githubusercontent.com/Desyamelia18/prediksi_hati/2020ee92a5bd773e65041cc5f3723caab0425486/indian_liver_patient.csv", encoding="utf-8")
 # df
 
 df.info()
@@ -43,7 +43,7 @@ df.drop_duplicates(inplace=True)
 # output_csv_file = 'cleaned_data.csv'
 # df.to_csv(output_csv_file, index=False)
 
-df = pd.read_csv('https://raw.githubusercontent.com/Arinatyas/bismillah/refs/heads/main/cleaned_data%20(1).csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Desyamelia18/prediksi_hati/2020ee92a5bd773e65041cc5f3723caab0425486/cleaned_data%20(1).csv')
 test_size = int(len(df) * 0.3)
 
 df = df.sample(frac=1, random_state=42).reset_index(drop=True)
